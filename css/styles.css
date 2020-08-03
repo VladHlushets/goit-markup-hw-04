@@ -13,6 +13,7 @@ html {
   --secondary-text-color: #757575;
   --accent-text-color: #2196f3;
   --white-color: #ffffff;
+  --contact-color: #757575;
 }
 
 /* цвет основного шрифта #212121; */
@@ -20,12 +21,15 @@ html {
 /* белый цвет #FFFFFF; */
 /* акцент "Лого" #2196F3; */
 /* вторичный цвет фона #F5F4FA; */
-.button-icon {
-  fill: currentColor;
+
+
+.contact-icon {
+  fill: var(--contact-color);
+  margin-right: 10px;
 }
 
-.contact-icons {
-  fill: aqua;
+.contact-icon:hover {
+  fill: var(--accent-text-color);
 }
 
 body {
@@ -162,6 +166,7 @@ body {
 
 /* First section text&button */
 
+
 .default-section-hero {
   width: 1600px;
   height: 600px;
@@ -224,6 +229,17 @@ body {
 
 .about-us {
   display: flex;
+}
+
+.about-us-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F5F4FA;
+  margin-bottom: 25px;
 }
 
 /* Заголовки секций */
