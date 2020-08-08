@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 *,
 *::before,
 *::after {
@@ -26,9 +30,10 @@ html {
 .contact-icon {
   fill: var(--contact-color);
   margin-right: 10px;
+  vertical-align: middle;
 }
 
-.contact-icon:hover {
+.contacts-link:hover  .contact-icon{
   fill: var(--accent-text-color);
 }
 
@@ -168,15 +173,12 @@ body {
 
 
 .default-section-hero {
-  width: 1600px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
 .overlay {
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/herooptimaze/Headerimgoptimaze.jpg);
@@ -231,16 +233,17 @@ body {
   display: flex;
 }
 
-.about-us-item::before {
-  display: block;
-  content: "";
-  height: 120px;
-  background-size: contain;
+
+.about-us-item_img {
+  display: flex;
+  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #F5F4FA;
   margin-bottom: 25px;
+  padding: 25px 0;
 }
+
 
 /* Заголовки секций */
 
@@ -307,6 +310,12 @@ body {
   margin-bottom: 30px;
 }
 
+.all-team-command {
+  background: #ffffff;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 4px 4px;
+}
+
 .all-team-name {
   text-align: center;
   margin-bottom: 10px;
@@ -323,6 +332,35 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
+.social-icons-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: var(--white-color);
+  border-radius: 50%;
+}
+.social-icons-link {
+  fill: #AFB1B8;
+}
+.social-icons-link:hover {
+  fill: white;
+  background-color: var(--accent-text-color);
+}
+
+
 
 /* Заголовки к тексу (2 секция) */
 
@@ -344,6 +382,7 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--white-color);
+  margin-bottom: 20px;
 }
 
 .description {
@@ -371,6 +410,31 @@ body {
   font-style: normal;
 }
 
+.our-patners {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  color: #afb1b8;
+}
+
+.item {
+  fill: #AFB1B8;
+}
+.item:hover {
+  fill: var(--accent-text-color);
+  border-color: var(--accent-text-color);
+}
+
 
 .footer {
   padding: 60px 0 60px 214px;
@@ -389,4 +453,31 @@ body {
 
 .footer .contacts-item {
   margin-bottom: 9px;
+}
+
+.social-icons-list-footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.social-icons-item-footer:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link-footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.social-icons-link-footer {
+  fill: var(--white-color);
+}
+.social-icons-link-footer:hover {
+  fill: white;
+  background-color: var(--accent-text-color);
 }

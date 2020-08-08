@@ -77,6 +77,13 @@ body {
   justify-content: space-between;
 }
 
+.our-portfolio {
+  background: #FFFFFF;
+  border: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+
 .description {
   margin-top: 0;
   margin-bottom: 20px;
